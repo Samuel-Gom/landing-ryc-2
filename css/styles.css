@@ -640,6 +640,10 @@ textarea {
     margin-bottom: 1rem;
 }
 
+.splide__slide {
+    aspect-ratio: 135 / 191;
+}
+
 @media (width >= 768px) {
     .certificates__img {
         max-width: 400px;
@@ -826,6 +830,8 @@ textarea {
 
 .why-card__img {
     width: 100px;
+    aspect-ratio: 149 / 117;
+    object-fit: contain;
 }
 
 .why-card:nth-child(even) .why-card__img {
