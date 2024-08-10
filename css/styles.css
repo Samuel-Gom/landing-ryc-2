@@ -9,6 +9,7 @@
     --color-two: #003b59;
     --color-three: #ffffff;
     --color-four: #162036;
+    --color-five: #ef4900;
     --padding-size: 3rem;
 }
 
@@ -915,4 +916,128 @@ input {
 .testimony__company {
     font-weight: 600;
     color: var(--color-two);
+}
+
+
+/* SECTION PROMO */
+.promo {
+    margin-block: 5rem;
+    background-color: var(--color-five);
+}
+
+.promo__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    padding-block: 3rem;
+    color: var(--color-three);
+    background-color: var(--color-five);
+    border-radius: 1.5rem;
+}
+
+.promo__group-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--color-three);
+}
+
+.promo__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo__icon .icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.promo__number {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.promo__number .number {
+    margin-top: .5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.promo__paragraph {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    color: inherit;
+    text-align: center;
+    border-bottom: 2px solid var(--color-three);
+}
+
+.promo__cta {
+    color: var(--color-one);
+    background-color: var(--color-three);
+    border: 2px solid var(--color-three);
+    transition: color .5s, background-color .5s, transform .5s;
+
+    &:hover,
+    &:focus {
+        color: var(--color-three);
+        background-color: transparent;
+        transform: scale(.98);
+    }
+}
+
+@media (width >=768px) {
+    .promo__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .promo__group-call {
+        width: auto;
+        padding-bottom: 0;
+        padding-right: 1.5rem;
+        border-bottom: none;
+        border-right: 2px solid var(--color-three);
+    }
+
+    .promo__paragraph {
+        flex-basis: 300px;
+        flex-grow: 1;
+        height: 100%;
+        padding-block: 2rem;
+        border: none;
+        border-right: 2px solid var(--color-three);
+    }
+
+    .promo__cta {
+        margin-inline: auto;
+    }
+}
+
+@media (width >= 903px) {
+    .promo__paragraph {
+        padding-block: 0;
+    }
+}
+
+@media (width >=1024px) {
+    .promo__content {
+        gap: 3rem;
+    }
+
+    .promo__group-call {
+        padding-right: 3rem;
+    }
+
+    .promo__paragraph {
+        padding-right: 3rem;
+    }
 }
