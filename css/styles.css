@@ -1100,8 +1100,12 @@ input {
 
     &:hover,
     &:focus {
-        background-color: var(--color-one);
+        background-color: var(--color-five);
     }
+}
+
+.faq[open] .faq__title {
+    background-color: var(--color-five);
 }
 
 .faq__title::before {
