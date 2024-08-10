@@ -72,14 +72,10 @@ input {
 }
 
 .guide {
-    width: max-content;
-    padding: .65rem 1rem;
     font-size: .9rem;
-    font-weight: 600;
-    color: var(--color-three);
-    background-color: var(--color-two);
-    border-radius: 1rem;
-    border-bottom-left-radius: 0;
+    font-weight: 700;
+    color: var(--color-one);
+    text-transform: uppercase;
 }
 
 .cta {
@@ -90,7 +86,7 @@ input {
     color: var(--color-three);
     background-color: var(--color-one);
     border: 2px solid var(--color-one);
-    border-radius: .8rem;
+    border-radius: 2rem;
     transition: color .5s, background-color .5s, transform .5s;
 
     &:hover,
@@ -100,21 +96,6 @@ input {
         transform: scale(.98);
     }
 }
-
-/* PARA EL OTRO */
-/* .background {
-    position: absolute;
-    inset: 0;
-    z-index: -10;
-    user-select: none;
-}
-
-.background .img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    pointer-events: none;
-} */
 
 @keyframes slide {
     from {
@@ -147,7 +128,7 @@ input {
 .header {
     background-color: var(--color-two);
     background-image: linear-gradient(to right, #003b59b3, #003b59b3), url("../assets/img/hero.webp");
-    background-position: center;
+    background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -294,6 +275,10 @@ input {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
+}
+
+.hero__guide {
+    color: var(--color-three);
 }
 
 .hero__title {
@@ -583,6 +568,10 @@ input {
     font-weight: 900;
 }
 
+.benefits__cta {
+    margin-inline: auto;
+}
+
 
 /* SECTION ABOUT */
 .about {
@@ -771,3 +760,5 @@ input {
 .why-card__paragraph {
     color: var(--color-two);
 }
+
+
