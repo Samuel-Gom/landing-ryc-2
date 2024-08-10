@@ -774,6 +774,7 @@ input {
 /* SECTION INFO */
 .info {
     position: relative;
+    margin-block: 5rem;
 }
 
 .info__background {
@@ -874,6 +875,12 @@ input {
     box-shadow: 0 4px 10px #00000040;
 }
 
+.testimonies__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .testimony__quote {
     position: absolute;
     bottom: .5rem;
@@ -928,7 +935,7 @@ input {
 
 /* SECTION PROMO */
 .promo {
-    margin-block: 5rem;
+    margin-block: 5rem 8rem;
     background-color: var(--color-five);
 }
 
@@ -1036,6 +1043,10 @@ input {
 }
 
 @media (width >=1024px) {
+    .promo {
+        margin-block: 5rem 10rem;
+    }
+
     .promo__content {
         gap: 3rem;
     }
