@@ -261,6 +261,12 @@ textarea {
     }
 }
 
+@media (width >=1024px) {
+    .navbar__logo {
+        width: 125px;
+    }
+}
+
 
 /* HEADER - HERO */
 .hero {
@@ -1072,7 +1078,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    padding-block: var(--padding-size);
+    padding-block: 5rem;
 }
 
 .faqs__figure {
@@ -1329,5 +1335,121 @@ textarea {
 
     .contact-form__input {
         flex-basis: 250px;
+    }
+}
+
+
+/* FOOTER */
+.footer {
+    position: relative;
+    color: var(--color-three);
+}
+
+.footer__background {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    background-color: var(--color-two);
+    user-select: none;
+}
+
+.footer__background .img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+}
+
+.footer__content {
+    display: grid;
+    gap: 3rem;
+    padding-block: 5rem;
+    font-weight: 500;
+}
+
+.footer__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__figure {
+    width: 100px;
+    margin-bottom: .5rem;
+    aspect-ratio: 49 / 24;
+}
+
+.footer__title {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.footer .contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer .contact_info address {
+    font-style: normal;
+}
+
+.footer .contact_info li,
+.footer .social_media li {
+    display: flex;
+    gap: 1.25rem;
+    color: var(--white);
+    align-items: center;
+}
+
+.footer .contact_info li a,
+.footer .social_media li a {
+    max-width: 250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: var(--white);
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+.footer_container li svg {
+    color: var(--white);
+}
+
+.footer .social_media {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer .social_media-icons {
+    display: flex;
+    align-items: center;
+}
+
+@media (width >= 375px) {
+    .footer .contact_info li a,
+    .footer .social_media li a {
+        max-width: 100%;
+    }
+}
+
+@media (width >= 768px) {
+    .footer__content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (width >= 1024px) {
+    .footer__content {
+        grid-template-columns: 1fr 1fr .5fr;
+    }
+
+    .footer__figure {
+        width: 125px;
     }
 }
