@@ -1139,6 +1139,7 @@ input {
 
     .faqs__figure {
         width: 50%;
+        max-width: 100%;
     }
 
     .faqs__texts {
