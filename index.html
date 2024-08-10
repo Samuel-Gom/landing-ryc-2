@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R&C Consultiva Perú</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/themes/splide-default.min.css">
+    <script src="./splide-4.1.3/dist/js/splide.min.js" defer></script>
     <link rel="preload" href="./assets/font/Urbanist-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/img/hero.webp" as="image" type="image/webp">
     <meta name="description"
@@ -382,6 +384,42 @@
                         title="Logo de Sodexo" loading="lazy">
                 </div>
             </div>
+        </section>
+
+        <!-- SECTION CERTIFICATES -->
+        <section class="certificates container">
+            <h2 id="carousel-heading" class="certificates__title title"><span class="resalt">Clientes</span> Certificados</h2>
+            <section class="splide certificates__carrusel" aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" data-splide-interval="5000">
+                            <img class="certificates__img" src="./assets/img/certificacion-1.webp" alt="Certificado obtenido" loading="lazy"> 
+                        </li>
+                        <li class="splide__slide" data-splide-interval="5000">
+                            <img class="certificates__img" src="./assets/img/certificacion-2.webp" alt="Certificado obtenido" loading="lazy"> 
+                        </li>
+                        <li class="splide__slide" data-splide-interval="5000">
+                            <img class="certificates__img" src="./assets/img/certificacion-3.webp" alt="Certificado obtenido" loading="lazy"> 
+                        </li>
+                        <li class="splide__slide" data-splide-interval="5000">
+                            <img class="certificates__img" src="./assets/img/certificacion-4.webp" alt="Certificado obtenido" loading="lazy"> 
+                        </li>
+                        <li class="splide__slide" data-splide-interval="5000">
+                            <img class="certificates__img" src="./assets/img/certificacion-5.webp" alt="Certificado obtenido" loading="lazy"> 
+                        </li>
+                        <li class="splide__slide" data-splide-interval="5000">
+                            <img class="certificates__img" src="./assets/img/certificacion-6.webp" alt="Certificado obtenido" loading="lazy"> 
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="splide__progress">
+                    <div class="splide__progress__bar">
+                    </div>
+                </div>
+            </section>
+            <a class="certificates__cta cta" href="https://wa.link/oiio1u" target="_blank" rel="noopener noreferrer"
+                            title="WhatsApp de R&C Consultiva Perú">Homologa tu empresa</a>
         </section>
 
         <!-- SECTION ABOUT -->
@@ -778,7 +816,27 @@
                 </ul>
             </div>
         </div>
-    </footer>    
+    </footer>
+    
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide', {
+                type    : 'loop',
+                perPage : 3,
+                autoplay: true,
+                gap: '5rem',
+                focus  : 'center',
+                breakpoints: {
+                    1200: { perPage: 3, focus  : 'center', },
+                    1024: { perPage: 2 },
+                    768 : { perPage: 2, focus  : 1, },
+                    600 : { perPage: 1 },
+                },
+            } );
+
+            splide.mount();
+        } );
+    </script>
 </body>
 
 </html>

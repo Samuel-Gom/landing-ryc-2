@@ -589,6 +589,64 @@ textarea {
 }
 
 
+/* SECTION CERTIFICATES */
+.certificates {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-block: var(--padding-size);
+}
+
+.certificates__title {
+    text-align: center;
+}
+
+.certificates__carrusel {
+    padding-block: 3rem;
+}
+
+.certificates__img {
+    width: 100%;
+    max-width: 300px;
+    margin-inline: auto;
+}
+
+.certificates__cta {
+    margin-top: 2rem;
+    margin-inline: auto;
+}
+
+/* Modificando algunos estilos de la libreria splida */
+.splide__arrow  {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    background-color: var(--color-two) !important;
+}
+
+.splide__arrow svg {
+    fill: var(--color-three) !important;
+}
+
+.splide__progress__bar {
+    background-color: var(--color-two) !important;
+}
+
+.splide__pagination__page.is-active {
+    background-color: var(--color-two) !important;
+}
+
+.splide__track {
+    margin-bottom: 1rem;
+}
+
+@media (width >= 768px) {
+    .certificates__img {
+        max-width: 400px;
+    }
+}
+
+
 /* SECTION ABOUT */
 .about {
     display: flex;
@@ -761,6 +819,7 @@ textarea {
     justify-content: center;
     gap: 1rem;
     padding: 3rem 2rem;
+    background-color: var(--color-two);
     border-radius: 1.25rem;
     box-shadow: 0 4px 10px #00000040;
 }
@@ -774,7 +833,7 @@ textarea {
 }
 
 .why-card__paragraph {
-    color: var(--color-two);
+    color: var(--color-three);
 }
 
 
