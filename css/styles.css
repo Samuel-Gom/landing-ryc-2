@@ -1029,7 +1029,7 @@ input {
     }
 }
 
-@media (width >= 903px) {
+@media (width >=903px) {
     .promo__paragraph {
         padding-block: 0;
     }
@@ -1046,5 +1046,99 @@ input {
 
     .promo__paragraph {
         padding-right: 3rem;
+    }
+}
+
+
+/* SECTION FAQS */
+.faqs {
+    background-color: var(--color-four);
+}
+
+.faqs__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-block: var(--padding-size);
+}
+
+.faqs__figure {
+    max-width: 500px;
+}
+
+.faqs__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.faqs__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq {
+    background-color: #111828;
+    border-radius: .5rem;
+}
+
+.faq__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--color-three);
+    background-color: #111828;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color .5s;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-one);
+    }
+}
+
+.faq__title::before {
+    content: url("../assets/icons/chevron-down.svg");
+    flex-shrink: 0;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-left: 1ch;
+    transition: transform .5s;
+}
+
+.faq[open] .faq__title::before {
+    transform: rotate(-180deg);
+}
+
+.faq__paragraph {
+    padding: 1.5rem;
+    color: var(--color-three);
+}
+
+@media (width >=1024px) {
+    .faqs__content {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .faqs__figure {
+        width: 50%;
+    }
+
+    .faqs__texts {
+        width: 50%;
+        height: 600px;
     }
 }
