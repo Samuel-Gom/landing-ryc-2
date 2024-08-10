@@ -415,6 +415,7 @@ input {
 @media (width >=1024px) {
     .hero {
         flex-direction: row;
+        padding-block: 3rem var(--padding-size);
     }
 
     .hero__texts {
@@ -423,6 +424,12 @@ input {
 
     .hero__title {
         font-size: 3rem;
+    }
+}
+
+@media (width >=1440px) {
+    .hero {
+        min-height: auto;
     }
 }
 
