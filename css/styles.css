@@ -1070,7 +1070,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     padding-block: var(--padding-size);
 }
 
@@ -1101,6 +1101,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 70px;
     padding: 1rem;
     font-weight: 600;
     color: var(--color-three);
@@ -1145,7 +1146,6 @@ input {
     .faqs__content {
         flex-direction: row;
         justify-content: space-between;
-        gap: 4rem;
     }
 
     .faqs__figure {
@@ -1155,6 +1155,6 @@ input {
 
     .faqs__texts {
         width: 50%;
-        height: 600px;
+        height: 700px;
     }
 }
