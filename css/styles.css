@@ -609,6 +609,7 @@ textarea {
     width: 100%;
     max-width: 300px;
     margin-inline: auto;
+    aspect-ratio: 75 / 101;
 }
 
 .certificates__cta {
@@ -639,13 +640,10 @@ textarea {
     margin-bottom: 1rem;
 }
 
-.splide__slide {
-    aspect-ratio: 135 / 191;
-}
-
 @media (width >= 768px) {
     .certificates__img {
         max-width: 400px;
+        aspect-ratio: 135 / 191;
     }
 }
 
