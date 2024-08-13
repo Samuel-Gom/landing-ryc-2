@@ -1220,6 +1220,7 @@ textarea {
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
+    scroll-margin-top: 5rem;
 }
 
 .video__player {
@@ -1334,6 +1335,7 @@ textarea {
     .video {
         flex-grow: 1;
         width: 40%;
+        scroll-margin-top: 10rem;
     }
 }
 
