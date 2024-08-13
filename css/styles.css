@@ -80,11 +80,15 @@ textarea {
 }
 
 .cta {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 1ch;
     width: max-content;
     padding: 1.15rem 1.5rem;
     font-weight: 700;
     color: var(--color-three);
+    text-align: center;
+    white-space: nowrap;
     background-color: var(--color-one);
     border: 2px solid var(--color-one);
     border-radius: 2rem;
@@ -96,6 +100,12 @@ textarea {
         background-color: var(--color-three);
         transform: scale(.98);
     }
+}
+
+.cta .icon {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 @keyframes slide {
@@ -141,9 +151,9 @@ textarea {
     position: relative;
     z-index: 10;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1.5rem;
     padding-block: 1rem;
 }
@@ -155,7 +165,7 @@ textarea {
 
 @media (width >=375px) {
     .navbar {
-        justify-content: space-between;
+        flex-direction: row;
     }
 }
 
@@ -667,11 +677,11 @@ textarea {
 
     .about__figure {
         order: -1;
-        width: 50%;
+        width: 40%;
     }
 
     .about__texts {
-        width: 50%;
+        width: 60%;
     }
 
     .about__group {
