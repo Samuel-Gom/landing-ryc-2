@@ -129,18 +129,10 @@ textarea {
 .header {
     position: relative;
     background-color: var(--color-two);
-    background-image: url("../assets/img/hero.webp");
+    background-image: linear-gradient(#162036cf, #162036cf), url("../assets/img/hero.webp");
     background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
-
-    &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: #162036cc;
-        mix-blend-mode: hard-light;
-    }
 }
 
 
