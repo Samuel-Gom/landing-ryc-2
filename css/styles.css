@@ -414,6 +414,112 @@ textarea {
 }
 
 
+/* SECTION SOLUTIONS */
+.solutions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.solutions__figure {
+    max-width: 350px;
+    aspect-ratio: 35 / 47;
+}
+
+.solutions__img {
+    aspect-ratio: 35 / 47;
+}
+
+.solutions__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.solutions__paragraph {
+    color: var(--color-two);
+}
+
+.solutions__paragraph:last-of-type {
+    font-weight: 700;
+}
+
+.solutions__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    list-style-position: inside;
+}
+
+.solutions__item {
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+    font-weight: 600;
+    color: var(--color-two);
+
+    &::before {
+        content: url("../assets/icons/caret-right-square-fill.svg");
+        flex-shrink: 0;
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+.solutions__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.solutions__cta {
+    color: var(--color-three);
+    background-color: var(--color-two);
+    border-color: var(--color-two);
+
+    &:hover,
+    &:focus {
+        color: var(--color-two);
+        background-color: var(--color-three);
+    }
+}
+
+@media (width >= 1024px) {
+    .solutions {
+        flex-direction: row;
+    }
+
+    .solutions__texts {
+        width: 60%;
+    }
+
+    .solutions__group {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .solutions__figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        max-width: 100%;
+        aspect-ratio: 389 / 522;
+    }
+
+    .solutions__img {
+        aspect-ratio: 389 / 522;
+    }
+}
+
+
 /* SECTION BENEFITS */
 .benefits {
     padding-block: var(--padding-size);
