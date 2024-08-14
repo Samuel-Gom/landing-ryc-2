@@ -420,6 +420,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     gap: 4rem;
+    padding-block: var(--padding-size);
 }
 
 .solutions__figure {
