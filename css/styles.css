@@ -425,12 +425,12 @@ textarea {
 }
 
 .solutions__figure {
-    max-width: 350px;
-    aspect-ratio: 35 / 47;
+    max-width: 450px;
+    aspect-ratio: 580 / 577;
 }
 
 .solutions__img {
-    aspect-ratio: 35 / 47;
+    aspect-ratio: 580 / 577;
 }
 
 .solutions__texts {
@@ -505,19 +505,6 @@ textarea {
     .solutions__group {
         flex-wrap: nowrap;
         justify-content: flex-start;
-    }
-
-    .solutions__figure {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        max-width: 100%;
-        aspect-ratio: 389 / 522;
-    }
-
-    .solutions__img {
-        aspect-ratio: 389 / 522;
     }
 }
 
@@ -679,8 +666,12 @@ textarea {
 
 .about__figure {
     order: 1;
-    max-width: 450px;
-    aspect-ratio: 464 / 441;
+    max-width: 350px;
+    aspect-ratio: 35 / 47;
+}
+
+.about__img {
+    aspect-ratio: 35 / 47;
 }
 
 .about__texts {
@@ -785,7 +776,16 @@ textarea {
 
     .about__figure {
         order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 40%;
+        max-width: 100%;
+        aspect-ratio: 389 / 522;
+    }
+
+    .about__img {
+        aspect-ratio: 389 / 522;
     }
 
     .about__texts {
