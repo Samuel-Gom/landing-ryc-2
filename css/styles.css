@@ -666,12 +666,12 @@ textarea {
 
 .about__figure {
     order: 1;
-    max-width: 350px;
-    aspect-ratio: 35 / 47;
+    max-width: 100%;
+    aspect-ratio: 181 / 241;
 }
 
 .about__img {
-    aspect-ratio: 35 / 47;
+    aspect-ratio: 181 / 241;
 }
 
 .about__texts {
@@ -776,16 +776,6 @@ textarea {
 
     .about__figure {
         order: -1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        max-width: 100%;
-        aspect-ratio: 389 / 522;
-    }
-
-    .about__img {
-        aspect-ratio: 389 / 522;
     }
 
     .about__texts {
@@ -818,7 +808,6 @@ textarea {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    max-width: 900px;
     padding-block: var(--padding-size);
 }
 
@@ -827,14 +816,13 @@ textarea {
 }
 
 .why__group {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
     gap: 3rem;
+    width: 100%;
 }
 
 .why-card {
-    flex-basis: 300px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -857,6 +845,18 @@ textarea {
 
 .why-card__paragraph {
     color: var(--color-three);
+}
+
+@media (width >= 1200px) {
+    .why__group {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .why-card:nth-child(even) .why-card__img {
+        margin-left: 0;
+    }
 }
 
 
