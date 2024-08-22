@@ -425,12 +425,12 @@ textarea {
 }
 
 .solutions__figure {
-    max-width: 450px;
-    aspect-ratio: 580 / 577;
+    max-width: 500px;
+    aspect-ratio: 197 / 174;
 }
 
 .solutions__img {
-    aspect-ratio: 580 / 577;
+    aspect-ratio: 197 / 174;
 }
 
 .solutions__texts {
@@ -499,12 +499,16 @@ textarea {
     }
 
     .solutions__texts {
-        width: 60%;
+        width: 55%;
     }
 
     .solutions__group {
         flex-wrap: nowrap;
         justify-content: flex-start;
+    }
+
+    .solutions__figure {
+        width: 45%;
     }
 }
 
